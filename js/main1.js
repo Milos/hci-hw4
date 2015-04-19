@@ -18,13 +18,13 @@ function validateForm()
 	 	email.className = email.className + " error";
 	 	err.innerHTML= err.innerHTML + "<p>Please enter a valid email address</p>";
 	 } else {
-	 	name.className = "email";
+	 	email.className = "email";
 	 	} 	 
 	if (textarea.value.length <= 60){
 	 	textarea.className = textarea.className + " error";
 	 	err.innerHTML= err.innerHTML + "<p>Please write at least 50 characters</p>";
 	 } else {
-	 	name.className = "message"; 	 
+	 	textarea.className = "message";	 
 	 }	 
 } 
 function validateEmail(email) {
