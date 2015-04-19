@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/main1.js"></script> <!-- Resource jQuery -->
+	<title>Contact Form</title>
+</head>
+<body>
+	<header>
+		<h1>HCI-HW04</h1>
+	</header>
+	
+	<form class="cd-form floating-labels" method="POST">
+		<fieldset>
+			<legend>Personal Info</legend>
+
+			<div class="error-message" id="message">
+				<!-- <p>Please enter a valid email address</p> -->
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Name</label>
+				<input class="user" type="text" name="cd-name" id="cd-name" required>			
+			</div>
+			<div class="icon">
+				<label class="cd-label" for="cd-company">City</label>
+				<input class="company" type="text" name="cd-company" id="cd-company">			
+			</div>
+			<div class="icon">
+				<label class="cd-label" for="cd-email">Email</label>
+				<input class="email" type="text" name="cd-email" id="cd-email" required>			
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Education Info</legend>
+
+			<div>
+				<h4>Faculty</h4>
+
+				<p class="cd-select icon">
+					<select class="faculty">
+						<option value="0">Select Faculty</option>
+						<option value="1">FIT</option>
+						<option value="2">FM</option>
+						<option value="3">FMU</option>
+					</select>
+				</p>
+			</div> 
+
+			<div>
+				<h4>Scholarship</h4>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-1" checked>
+						<label for="cd-radio-1">Yes</label>
+					</li>
+
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-2">
+						<label for="cd-radio-2">No</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Sports</h4>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="checkbox" id="cd-checkbox-1">
+						<label for="cd-checkbox-1">Football</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="cd-checkbox-2">
+						<label for="cd-checkbox-2">Tennis</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="cd-checkbox-3">
+						<label for="cd-checkbox-3">Basketball</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-textarea">Short Bio </label>
+				<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+			</div>
+
+			<div>
+				<input type="submit" value="Send Request" onclick="validateForm()">
+			</div>
+		</fieldset>
+	</form>
+	<footer>
+		<p>Copyright &copy 2015 Milos Menicanin 2119 </p>
+	</footer>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
